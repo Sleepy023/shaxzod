@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+     href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"
+      crossorigin="anonymous"/>
+</head>
+<body>
+    <style>
+    .new-todo{
+width: 200px;
+padding-right: 70px; 
+padding-top: 5px; 
+padding-bottom: 5px; 
+padding-left: 5px;
+border: none;
+border-radius: 4px;
+    }
+ .new-todo:focus, .new-todo:active {
+     outline: none;
+}
+
+.add-todo {
+width: 70px;
+margin-left: -70px;
+padding: 5px;
+border: none;
+border-top-right-radius: 4px;
+ border-bottom-right-radius: 4px; 
+ background-color: powderblue;
+}
+
+.spaced {
+    padding: 2px;
+}
+
+.space label{ 
+    color: white;
+}
+
+    </style>
+    <div class="container">
+    <header>
+        <h1>
+            Today's Todos
+        </h1>
+    </header>
+    <main>
+        <form>
+            <div class="space">
+            <label for="newTodo" class="label">
+         Add a new todo:
+          </label>
+        </div>
+            <input type="text" id="newTodo" class="new-todo" placeholder="New todo"/>
+            <button type="submit" class="add-todo" id="addNewTodo" >    
+            <i class="fas fa-plus"></i>
+            <span> Add</span>
+        </button>
+              
+             </form>
+    </main>
+    <footer>
+        <hr>
+        <ul clas="todo-list" id="todolist"></ul>
+        <hr>
+        <ul class="todo-done-list" id="toDoneList"></ul>
+    </footer>
+</div>
+<script type= "text/javascript" src="js//todolistapp.js"></script>
+</body>
+</html>
